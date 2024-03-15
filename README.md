@@ -1,2 +1,2 @@
 # sps
-Reading from a serial port using a web service
+Реализация чтение из com-порта, поверх которого реализован web-сервис для интеграции с приложениями.
