@@ -224,7 +224,10 @@ namespace sps
             Thread.Sleep(1000);
 
             if (listener != null)
+            {
                 listener.Stop();
+                listener.Close();
+            }
 
             if (httptrade.ThreadState == System.Threading.ThreadState.Running)
                 httptrade.Abort();
