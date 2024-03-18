@@ -181,19 +181,13 @@ namespace sps
                             break;
                         case "/get":
                             result = GetSerialData();
-                            break;
-                        case "/quit":
-                            result = "quit";
-                            break;
+                            break;                        
                     }
                 }
                 catch
                 {
                     result = "0";
                 }
-
-                if (result == "quit")
-                    break;
 
                 HttpListenerResponse response = context.Response;
                 string responseString = result;
