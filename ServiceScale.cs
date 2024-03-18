@@ -23,7 +23,6 @@ namespace sps
             try
             {
                 port.Open();
-                port.DataReceived += new SerialDataReceivedEventHandler(DataReceived);
             }
             catch
             {
