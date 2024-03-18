@@ -1,0 +1,1 @@
+sc create sps binPath= "%~dp0sps.exe" DisplayName= "Scale service"  
