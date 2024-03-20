@@ -15,14 +15,14 @@ namespace sps
 
         public bool Run(int Number, int Speed)
         {
-            port = new SerialPort();
-            port.DataReceived += new SerialDataReceivedEventHandler(DataReceived);
+            port = new SerialPort();            
 
             port.PortName = "COM" + Number.ToString();
             port.BaudRate = Speed;
             try
             {
                 port.Open();
+                port.DataReceived += new SerialDataReceivedEventHandler(DataReceived);
             }
             catch
             {
